@@ -27,10 +27,10 @@ namespace AvaTaxCalcSOAP
             //Run tax calculation test (tax/get POST)
             //Calculates tax on a transaction and, depending on parameters, records the transaction to the Admin Console.
             TaxTest.getTaxTest(calcreq, AcctNum, LicKey, webaddr);
-            //Run post tax test (no REST equivalent)
+            //Run get tax test (no REST equivalent)
             //Changes the status of a recorded transaction on the Admin Console to Posted or Committed.
             TaxTest.postTaxTest(calcreq, AcctNum, LicKey, webaddr);
-            //Run get tax history test (no REST equivalent)
+            //Run post tax history test (no REST equivalent)
             //Retrieves the detail of the original request and result of a tax document stored on the Admin Console.
             TaxTest.getTaxHistoryTest(calcreq, AcctNum, LicKey, webaddr);
             //Run cancel tax test (tax/cancel)
